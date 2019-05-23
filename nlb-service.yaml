@@ -9,9 +9,6 @@ metadata:
   annotations:
     # by default the type is elb (classic load balancer).
     service.beta.kubernetes.io/aws-load-balancer-type: nlb
-    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:us-east-1:700887717478:certificate/920a8ee5-ffb1-45f3-b24d-255a16810986 
-    service.beta.kubernetes.io/aws-load-balancer-ssl-negotiation-policy: ELBSecurityPolicy-2016-08
-    service.beta.kubernetes.io/aws-load-balancer-backend-protocol: ssl
 spec:
   # this setting is to make sure the source IP address is preserved.
   externalTrafficPolicy: Local
